@@ -1,0 +1,69 @@
+
+.proF{
+	margin-top: 50px;
+
+}
+.first {
+	margin-bottom: 50px;
+}
+
+.proF .first .headME{
+	padding: 35px 30px;
+	border: 1px solid #E3D9D0;;
+}
+.proF .first .headME h3{
+	padding-bottom: 5px;
+}
+.proF .first .headME button{
+	border: 1px solid gray;
+	float: left;
+	padding: 10px;
+	margin-right: 20px;
+}
+.second .midLeft p{
+	float: left;
+	color: ;
+	
+}
+.second .midLeft a{
+	float: right;
+	color: black;
+}
+.clear{
+	clear: both;
+}
+.second .midLeft{
+	padding-right: 40px;
+}
+.second .midLeft thead{
+	background: gray;
+	color: white;
+}
+.second .midLeft tbody tr:nth-child(even){
+	background: rgb(220,220,220);
+}
+.second .midRight{
+	padding: 20px 60px;
+	border: 1px solid #E3D9D0;
+	margin-left: 0px;
+}
+.second .midRight img{
+	float: left;
+	margin-top: 10px;
+}
+.second .midRight p{
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.second .midRight hr{
+	margin-top: 0px;
+	
+
+}
+.second .midRight button{
+	border: 1px solid gray;
+	margin-bottom: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

@@ -1,0 +1,284 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>食。CHEN </title>
+		<link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
+		<link rel="stylesheet" href="assets/CSS/menu.css">
+		<link rel="stylesheet" href="assets/CSS/index.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="assets/JS/jquery-3.3.1.min.js"></script>
+		
+		<script>
+		$(window).scroll(function() {
+			if ( $(this).scrollTop() > 750){
+		        $('.secondIMG').addClass('animation1');
+		        $('.secondIMG').removeClass('Hid');
+		        $('.leader').addClass('Hid');
+		    }
+		    if ( $(this).scrollTop() > 1100){
+		        $('.secondTXT').addClass('animation2');
+		        $('.secondTXT').removeClass('Hid');
+		        
+		    }
+		    if ( $(this).scrollTop() > 1500){
+		        $('.giftbox').addClass('animation2');
+		        $('.giftbox').removeClass('Hid');
+		        $('.whitebox').addClass('animation4');
+		        $('.whimage').addClass('animation1');
+		    }
+		    if ( $(this).scrollTop() > 2450){
+		        $('.thirdIMG1').addClass('fade-in');
+		        $('.thirdIMG1').removeClass('Hid');
+		        $('.thirdIMG2').addClass('fade-in');
+		        $('.thirdIMG2').removeClass('Hid');
+		        $('.thirdIMG3').addClass('fade-in');
+		        $('.thirdIMG3').removeClass('Hid');
+		    }
+			if ( $(this).scrollTop() > 2550){
+		        $('.leader').css("animation-name","revealLeaders");
+		        $('.leader-bar').css("animation-name","barLoad"); 
+				$('.leader').removeClass('Hid'); 
+		    }
+		    if ( $(this).scrollTop() > 3200){
+		        $('.forthleft').addClass('tilt-in-right-1');
+		        $('.forthleft').removeClass('Hid');
+		        $('.forthTXT').addClass('fade-in-2');
+		        $('.forthTXT').removeClass('Hid');
+		        $('.forthright').addClass('tilt-in-right-1');
+		        $('.forthright').removeClass('Hid');
+		    }
+		});
+		</script>
+		<style >
+			body
+			{
+				font-family: 微軟正黑體;
+				background-image: url(assets/images/bg.jpeg);
+			}
+			.jumbotron
+			{
+				background-color: #e3d9d0;
+				padding: 30px 10px 30px 140px;
+				transition: 0.4s;
+				position: relative;	
+				z-index: 99;
+				font-size: 20px;
+				font-weight: bold;
+				opacity: 1;
+			}
+
+			.fade:not(.show){
+				opacity: 1;
+			}
+			.box
+			{
+				color: black;
+			}
+			.box:hover
+			{
+				color: white;
+				text-decoration: none;
+			}
+	</style>
+	</head>
+	<body>
+		<!--<div class="container first" style="position: fixed; left: 50%; margin-left: -570px;">-->
+		<div class="container first">
+			<div class="row clearfix" style="margin-right: 0;">
+				<div class="col-md-12 column" style="padding-right: 0;">
+					<div class="jumbotron" id="navbar">
+						<a href="page/index.html"><img src="assets/images/logo.png"></a>
+						<div id="menu">
+							<ul style="vertical-align: middle;margin-top: 0.5cm;">
+								<li style="margin-left: 0%;"><a href="#">商品一覽</a>
+			      					<ul>
+							        	<li><a href="#hot">熱門商品</a></li>
+							        	<li><a href="page/shopcar_0.html">所有口味</a></li>
+							    	</ul>
+							    </li>
+								</li>
+								<li style="margin-left: 7%;"><a href="#">會員專區</a>
+									<ul>
+										<li><a href="page/profile.html">個人資料</a></li>
+										<li><a href="page/order.html">訂單查詢</a></li>
+									</ul>
+								</li>
+								<li style="margin-left: 7%;"><a href="page/contact.html">關於我們</a></li>
+								<li style="margin-left: 7%;"><a href="page/shopcar_2.html">購物車</a></li>
+								<li></li>
+								
+
+<li class="logsign" style="margin-left: 2.5cm;" onclick="location.href='logsign.html'"><a href="#">登入 ︱ 註冊</a></li>
+				
+					
+				
+					
+				    
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container-fulid BIGimage"><!-- 圖片輪播 -->
+			<div class="row clearfix" style="margin-right: 0;">
+				<div class="col-md-12 column" style="padding-right: 0;">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<img src="assets/images/home.png" width="100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="assets/images/home0.png" width="100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="assets/images/home1.png" width="100%">
+						</div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a><br>
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span>
+					  <span class="dot" onclick="currentSlide(2)"></span>
+					  <span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		<div class="container-fulid second"><!-- 大長圖片 -->
+			<div class="row clearfix" style="margin-right: 0;">
+				<div class="col-md-12 column secondIMG Hid" style="padding-right: 0;">
+				<img src="assets/images/d1.jpg" width="100%"></div>
+
+				<div class="col-md-12 column secondTXT Hid" style="padding-right: 0;margin-top: 50px;">
+					<p>馬卡龍是法國最具代表性的甜點之一，其高貴典雅的形象與賞心悅目的繽紛色彩將法式甜點的精髓演繹的淋漓盡致。<br>杏仁粉及糖構成馬卡龍酥脆的外殼，而融合各式食材的內餡則充滿各種可能性。</p>
+
+					<!--<p>創立於2019年初冬，中壢區向上大潤發旁，用了8年時間，近3000個日子，堅持做對的事，我們相信任何事物，<br>歸根究底回到最初的本質，都會呈現一種單純美好的狀態-和人一樣。<br>
+					現在就讓馬卡龍帶你進入時光旅行、憶起法國美好的情懷，回到下午茶的美好。</p>-->
+				</div>
+			</div>
+		</div>			
+
+		<div class="container third"><!-- 禮盒 -->
+			<div class="row clearfix giftbox Hid" style="margin-right: 0;margin-top: 0px;">
+				<div class="col-md-3 column whitebox">
+				<div class="whitecontext" ><p style="">精緻禮盒</p>
+					<button><a class="box" href='giftbox.html'>Learn More</a></button></div>
+				</div>
+				<div class="col-md-9 column whimage" style="">
+					<img src="assets/images/d3.jpg" width="100%"></div>
+			</div>
+		
+		
+			<!-- 排行榜 -->
+			<h2 style="margin-top:100px;font-weight: bold;" id="hot" name="hot">熱門商品</h2>
+			<div class="row clearfix Ranking" style="margin-right: 0;margin-top: 50px;">
+
+				<div class="col-md-3 offset-1 column Hid thirdIMG1">
+				 	<img src="assets/images/a2.png" width="100%">
+				 	<h4>黑巧克力</h4>
+				</div>
+				<div class="col-md-3 column Hid thirdIMG2">
+					<img src="assets/images/a5.png" width="100%" >
+					<h4>珍珠奶茶</h4>
+				</div>
+				<div class="col-md-3 column Hid thirdIMG3">
+				 	<img src="assets/images/a4.png" width="100%" >
+				 	<h4>抹茶</h4>
+				</div>
+			</div>
+			<div class="row clearfix Ranking" style="margin-right: 0;margin-top: 0px;">
+				<div class="col-md-12 column">
+					<div id="app"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 未完成 -->
+		<div class="container-fulid forth">
+			<div class="row clearfix" style="margin-right: 0;margin-top: 0px;">
+				<div class="col-md-4 column Hid forthleft">
+					<img src="assets/images/d4.jpg" width="100%">
+				</div>
+				<div class="col-md-4 column Hid forthTXT" style="font-size: 95px;margin-top: 7cm;">綻 放 每 個<br><div style="margin-left: 2cm;">食。C H E N
+				</div></div>
+				<div class="col-md-4 column Hid forthright"style="padding-right: 0;">
+					<img src="assets/images/d5.jpg" width="100%">
+				</div>
+			</div>
+
+		
+			<footer class="" style="margin-right: 0;">
+				<div class="row clearfix">
+					<div class="col-md-4 column">
+						<a href="https://www.facebook.com/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8-206886352670936/" target="_blank"><img src="assets/images/fb.png" width="50px"></a>
+						<a href="mailto:gina19991008@gmail.com" target="_blank"><img src="assets/images/mail.png" width="50px"></a>
+						<a href="https://instagram.com/cycuim?igshid=chxfa2lzqi7g" target="blank"><img src="assets/images/ig.png" width="50px"></div></a>
+				<div class="col-md-4 column">Copyright © 2019 CYIM. All Rights Reserved</div>
+				
+		</footer>
+		</div>
+		<a href="#"><img src="assets/images/top.png" id="top" style="position: fixed;right: 6%;bottom: 4%;width: 4%;transition: .4s;opacity:.8;"></a>
+
+<script>
+	
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	// 下一個上一個箭頭
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	// 圖片控制
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	}
+
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction()
+			{
+			  if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30)
+			  {
+			  	document.getElementById("navbar").style.padding = "10px 10px 10px 140px";
+			  	document.getElementById("navbar").style.opacity="0.8";
+			  	document.getElementById("top").style.opacity="1";
+			  }
+			  else
+			  {
+			    document.getElementById("navbar").style.padding = "30px 10px 30px 140px";
+			    document.getElementById("navbar").style.opacity="1";
+			    document.getElementById("top").style.opacity="0";
+			  }
+			}
+	
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react-dom.js'></script><script  src="assets/JS/bar.js"></script>
+
+	</body>
+</html>

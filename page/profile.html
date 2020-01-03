@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>會員資料</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="../assets/CSS/shopcar_0_style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/CSS/profile.css">
+	<style type="text/css">
+		body{
+			font-family: "微軟正黑體";
+			
+		}
+	</style>
+</head>
+<body>
+
+<div class="container proF">
+	<div class="row clearfix align-items-center justify-content-center first" >
+		<!-- 第一個區塊 -->
+		<div class="col-md-3 column ">
+			<img src="../assets/images/card.png" width="250"></div>
+		<div class="col-md-9 column headME">
+
+
+			<h3>早安！蜜雪兒</h3>
+			<button type="button" class="btn" onclick="location.href='order.html'">訂單查詢</button>
+			<button type="button" class="btn">我的收藏</button>
+			<button type="button" class="btn">我的優惠卷</button></div>
+
+	</div>
+
+	<div class="row clearfix second"> <!-- 第二個區塊 -->
+		<div class="col-md-7 column midLeft">
+			<p><strong>最近訂單記錄</strong></p><a href="order.html">詳細<strong>></strong></a>
+			<div class="clear"></div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>訂單編號</th>
+						<th>訂單內容</th>
+						<th>金額</th>
+						<th>狀態</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>TS191210A</td>
+						<td>巧克力*6</td>
+						<td>150</td>
+						<td>已完成</td>
+					</tr>
+					<tr class="success">
+						<td>TS191210A</td>
+						<td>草莓*1</td>
+						<td>150</td>
+						<td>已完成</td>
+					</tr>
+					<tr class="error">
+						<td>TS191210A</td>
+						<td>巧克力*6</td>
+						<td>150</td>
+						<td>已完成</td>
+					</tr>
+					<tr class="warning">
+						<td>TS191210A</td>
+						<td>巧克力*6 客製化*3</td>
+						<td>150</td>
+						<td>2020/01/01到達門市</td>
+					</tr>
+					<tr class="info">
+						<td>TS191210A</td>
+						<td>巧克力*6</td>
+						<td>150</td>
+						<td>未出貨</td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div>
+		<div class="col-md-5 column midRight">
+			<img src="../assets/images/settings.png" width="20"><p>會員設定</p>
+			<div class="clear"></div><hr>
+
+			<button type="button" class="btn btn-default btn-block data" onclick="location.href='user.jsp'">會員基本資料</button>
+			<button type="button" class="btn btn-default btn-block sub">通知訂閱取消</button>
+			<button type="button" class="btn btn-default btn-block psd" onclick="location.href='changePsd.jsp'">修改密碼</button>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

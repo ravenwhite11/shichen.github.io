@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>抹茶－食。CHEN</title>
+<link rel="icon" type="image/x-icon" href="../assets/images/logo.ico">
+
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+<link rel="stylesheet" href="../assets/CSS/shopcar_1_style.css">
+<link rel="stylesheet" href="../assets/CSS/menu.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link href="../assets/CSS/mh.css">
+	<style>
+		body{
+			font-family: "微軟正黑體";
+			background-image: url(../assets/images/bg.jpeg);
+		}
+		.jumbotron
+			{
+				background-color: #e3d9d0;
+				padding: 30px 10px 30px 140px;
+				transition: 0.4s;
+				z-index: 99;
+				font-size: 20px;
+				font-weight: bold;
+				opacity: 1;
+				position: relative;
+			}
+			.jumbotron img
+			{
+				width: 2cm;
+				float: left;
+				position: relative;
+				left: -2cm;
+				top: -0.2cm;
+			}
+	</style>
+	<script>
+		function checkMaxInput(form) {
+			var max = 150;
+			if (form.message.value.length > maxL){
+				form.message.value = form.message.value.substring(0, maxL);
+				alert("超過字囉><");
+			}    
+			else form.remLen.value = maxLen - form.message.value.length;
+		}
+	</script>
+</head>
+<body>
+<div class="container first">
+			<div class="row clearfix" style="margin-right: 0;">
+				<div class="col-md-12 column" style="padding-right: 0;">
+					<div class="jumbotron" id="navbar">
+						<a href="../index.html"><img src="../assets/images/logo.png"></a>
+						<div id="menu">
+							<ul style="vertical-align: middle;margin-top: 0.5cm;">
+								<li style="margin-left: 0%;"><a href="#">商品一覽</a>
+			      					<ul>
+							        	<li><a href="../index.html">熱門商品</a></li>
+							        	<li><a href="./shopcar_0.html">所有口味</a></li>
+							    	</ul>
+							    </li>
+								</li>
+								<li style="margin-left: 7%;"><a href="#">會員專區</a>
+									<ul>
+										<li><a href="./profile.html">個人資料</a></li>
+										<li><a href="./order.html">訂單查詢</a></li>
+									</ul>
+								</li>
+								<li style="margin-left: 7%;"><a href="./contact.html">關於我們</a></li>
+								<li style="margin-left: 7%;"><a href="./shopcar_2.html">購物車</a></li>
+								<li></li>
+								<li class="logsign" style="margin-left: 2.5cm;"><a href="logsign.html">登入 ／ 註冊</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<div class="wrapper container">
+	<h1>MACARON</h1>
+	<span><!-- 購物車圖案 -->
+		<a href="./shopcar_2.html">
+		<i class="shopping-cart"></i></a>
+	</span>
+
+	<div class="clear"></div>
+
+	<div class="items row">
+		<div class="item col-md-6 column">
+			<img src="../assets/images/a4.png" width="350">
+		</div>
+		<div class="information col-md-6 column">
+			<h2>抹茶</h2>
+			<p>NT: <em>$50</em></p>
+			<p>熱銷排行第三名！日式抹茶風味，如果吃膩了甜滋滋的口味，<br>何不來嘗試苦甜適中的迷人抹茶呢！</p><br><br>
+			<button class="add-to-cart" type="button">加入購物車</button>
+		</div>
+	</div>
+</div>	
+
+<div class="comment container">
+	<div class="comment-title"><h1>COMMENT</h1></div>
+	<div class="comment-msg">
+		<div class="msgbox">
+			<span class="msgword">評分</span>
+			<form action="" method="post"><br><!-- 表格=ID+評論內容 -->
+				<input class="IDinput" type="text" placeholder="使用者帳號" name="name" required>
+				<textarea class="Textinput" name="message" placeholder="留下您的評價吧:D" wrap=physical onKeyDown="checkMaxInput(this.form)" onKeyUp="checkMaxInput(this.form)" required></textarea>
+
+			<div class="like"> <!-- 笑臉 -->
+				<input type="radio" id="scoreId_1" class="score score_1" name="score" value="1">
+				<label for="scoreId_1" class="star star_1"></label>
+				<input type="radio" id="scoreId_2" class="score score_2" name="score" value="2">
+				<label for="scoreId_2" class="star star_2"></label>
+				<input type="radio" id="scoreId_3" class="score score_3" name="score" value="3">
+				<label for="scoreId_3" class="star star_3"></label>
+				<input type="radio" id="scoreId_4" class="score score_4" name="score" value="4">
+				<label for="scoreId_4" class="star star_4"></label>
+				<input type="radio" id="scoreId_5" class="score score_5" name="score" value="5">
+				<label for="scoreId_5" class="star star_5"></label>
+			</div>
+			<!-- 送出留言 -->
+			<input class="submit" type="submit" name="submit" value="送出">
+			</form>
+		</div>
+	</div>
+	<div class="message">
+		<div class="icon">
+			<img src="../assets/images/dog14.png" width="250"></div>
+		<div class="data">
+			<div class="namea">繼香光光雞</div>
+			<div class="love">★★★★★</div>
+			<div class="word">自從吃過這個 我就再也不吃西沙了</div>
+		</div>
+	</div> 
+	<div class="message">
+		<div class="icon">
+			<img src="../assets/images/dog14.png" width="250"></div>
+		<div class="data">
+			<div class="namea">@@@</div>
+			<div class="love">★★★★</div>
+			<div class="word">我有一個夢想</div>
+		</div>
+	</div>
+</div>
+<a href="#"><img src="../assets/images/top.png" id="top" style="position: fixed;right: 6%;bottom: 4%;width: 4%;transition: .4s;opacity: 0;"></a>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script><script  src="../assets/JS/jumpCart_1.js"></script>
+<script type="text/javascript">
+	window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction()
+			{
+			  if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30)
+			  {
+			  	document.getElementById("navbar").style.padding = "10px 10px 10px 140px";
+			  	document.getElementById("navbar").style.opacity="0.8";
+			  	document.getElementById("top").style.opacity="1";
+			  }
+			  else
+			  {
+			    document.getElementById("navbar").style.padding = "30px 10px 30px 140px";
+			    document.getElementById("navbar").style.opacity="1";
+			    document.getElementById("top").style.opacity="0";
+			  }
+			}
+</script>
+
+</body>
+</html>

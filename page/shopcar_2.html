@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>購物車－食。CHEN</title>
+<link rel="icon" type="image/x-icon" href="../assets/images/logo.ico">
+	
+	<link rel="stylesheet" href="../assets/CSS/shopcar_2_style.css">
+	<link rel="stylesheet" href="../assets/CSS/menu.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<style>
+	body{
+		font-family: "微軟正黑體";
+		background-image: url(../assets/images/bg.jpeg);
+	}
+	.jumbotron
+			{
+				background-color: #e3d9d0;
+				padding: 30px 10px 30px 140px;
+				transition: 0.4s;
+				z-index: 99;
+				font-size: 20px;
+				font-weight: bold;
+				opacity: 1;
+				position: relative;
+			}
+			.jumbotron img
+			{
+				width: 2cm;
+				float: left;
+				position: relative;
+				left: -2cm;
+				top: -0.2cm;
+			}
+			.product-title
+			{
+				font-weight: bolder;
+				font-size: 23px;
+			}
+	</style>
+
+</head>
+<body>
+	<div class="container first">
+		<div class="row clearfix" style="margin-right: 0;">
+			<div class="col-md-12 column" style="padding-right: 0;">
+				<div class="jumbotron" id="navbar">
+					<a href="../index.html"><img src="../assets/images/logo.png"></a>
+					<div id="menu">
+						<ul style="vertical-align: middle;margin-top: 0.5cm;">
+							<li style="margin-left: 0%;"><a href="#">商品一覽</a>
+		      					<ul>
+						        	<li><a href="../index.html">熱門商品</a></li>
+						        	<li><a href="./shopcar_0.html">所有口味</a></li>
+						    	</ul>
+						    </li>
+							</li>
+							<li style="margin-left: 7%;"><a href="#">會員專區</a>
+								<ul>
+									<li><a href="./profile.html">個人資料</a></li>
+									<li><a href="./order.html">訂單查詢</a></li>
+								</ul>
+							</li>
+							<li style="margin-left: 7%;"><a href="./contact.html">關於我們</a></li>
+							<li style="margin-left: 7%;"><a href="./shopcar_2.html">購物車</a></li>
+							<li></li>
+
+<li class="logsign" style="margin-left: 2.5cm;" onclick="location.href='logsign.html'"><a href="#">登入 ︱ 註冊</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="container first">
+
+	<h1>購物車</h1>
+
+	<div class="shopping-cart">
+	<div class="column-labels"><!--大標題-->
+		<label class="product-image">Image</label>
+		<label class="product-details">Product</label>
+		<label class="product-price">價錢</label>
+		<label class="product-quantity">數量</label>
+		<label class="product-removal">Remove</label>
+		<label class="product-line-price">總共</label>
+	</div>
+	
+	<form method="POST" action="checkbuy.html">
+	<div class="product">
+		<div class="product-image"><img src="../assets/images/a1.png"></div>
+		<div class="product-details">
+			<div class="product-title"><a href="#" target="blank">白巧克力</a></div>
+			<p class="product-description">甜而不膩，讚不絕口</p>
+		</div>
+		<div class="product-price">50</div>
+		<div class="product-quantity"><input id="product1" type="number" name="q1" value="0" min="0" ></div>
+		<div class="product-removal">
+			<button type=button class="remove-product" onclick="reset1()">重置</button>
+		</div>
+		<div class="product-line-price" id="p1">0</div>
+	</div>
+
+	<div class="product">
+		<div class="product-image"><img src="../assets/images/a2.png"></div>
+		<div class="product-details">
+			<div class="product-title"><a href="#" target="blank">黑巧克力</a></div>
+			<p class="product-description">最佳首選，經典風味</p>
+		</div>
+		<div class="product-price">50</div>
+		<div class="product-quantity"><input id="product2"  type="number" name="q2" value="0" min="0" ></div>
+		<div class="product-removal">
+			<button type=button class="remove-product" onclick="reset2()">重置</button>
+		</div>
+		<div class="product-line-price" id="p2">0</div>
+	</div>
+
+	<div class="product">
+		<div class="product-image"><img src="../assets/images/a3.png"></div>
+		<div class="product-details">
+			<div class="product-title"><a href="#" target="blank">草莓</a></div>
+			<p class="product-description">夢幻粉色系，少女最愛</p>
+		</div>
+		<div class="product-price">50</div>
+		<div class="product-quantity"><input  id="product3" type="number" name="q3" value="0" min="0" ></div>
+		<div class="product-removal">
+			<button type=button class="remove-product" onclick="reset3()">重置</button>
+		</div>
+		<div class="product-line-price" id="p3">0</div>
+	</div>
+
+	<div class="product">
+		<div class="product-image"><img src="../assets/images/a4.png"></div>
+		<div class="product-details">
+			<div class="product-title"><a href="#" target="blank">抹茶</a></div>
+			<p class="product-description">日式濃郁茶香，香醇順口</p>
+		</div>
+		<div class="product-price">50</div>
+		<div class="product-quantity"><input id="product4"  type="number"name="q4" value="0" min="0" ></div>
+		<div class="product-removal">
+			<button type=button class="remove-product" onclick="reset4()">重置</button>
+		</div>
+		<div class="product-line-price" id="p4">0</div>
+	</div>
+
+	<div class="product">
+		<div class="product-image"><img src="../assets/images/a5.png"></div>
+		<div class="product-details">
+			<div class="product-title"><a href=".#" target="blank">珍珠奶茶</a></div>
+			<p class="product-description">台灣特色風味，絕無僅有</p>
+		</div>
+		<div class="product-price">50</div>
+		<div class="product-quantity"><input id="product5" type="number" name="q5" value="0" min="0" ></div>
+		<div class="product-removal">
+			<button type=button class="remove-product" onclick="reset5()">重置</button>
+		</div>
+		<div class="product-line-price" id="p5">0</div>
+	</div>
+
+	<div class="product">
+		<div class="product-image"><img src="../assets/images/a6.png"></div>
+		<div class="product-details">
+			<div class="product-title"><a href="#" target="blank">春節限定</a></div>
+			<p class="product-description">期間限定！獨特春節風格　</p>
+		</div>
+		<div class="product-price">80</div>
+		<div class="product-quantity"><input  id="product6" type="number" name="q6" value="0" min="0" ></div>
+		<div class="product-removal">
+			<button type=button class="remove-product" onclick="reset6()">重置</button>
+		</div>
+		<div class="product-line-price" id="p6">0</div>
+	</div>
+
+	<div class="product">
+		<div class="product-image"><img src="../assets/images/a7.png"></div>
+		<div class="product-details">
+			<div class="product-title"><a href="#" target="blank">客製化</a></div>
+			<p class="product-description">來圖客製，滿足您所有需求</p>
+		</div>
+		<div class="product-price">90</div>
+		<div class="product-quantity"><input id="product7"  type="number" name="q7" value="0" min="0" ></div>
+		<div class="product-removal">
+			<button type=button class="remove-product" onclick="reset7()">重置</button>
+		</div>
+		<div class="product-line-price" id="p7">0</div>
+	</div>
+
+	<div class="product">
+		<div class="product-image"><img src="../assets/images/a8.png"></div>
+		<div class="product-details">
+			<div class="product-title"><a href="#" target="blank">精緻禮盒(6入)</a></div>
+			<p class="product-description">送禮首選禮盒 (口味隨機)</p>
+		</div>
+		<div class="product-price">290</div>
+		<div class="product-quantity"><input  id="product8" type="number" name="q8" value="0" min="0" ></div>
+		<div class="product-removal">
+			<button type=button class="remove-product" onclick="reset8()">重置</button>
+		</div>
+		<div class="product-line-price" id="p8">0</div>
+	</div>
+
+	<div class="totals">
+		<div class="totals-item totals-item-total">
+			<label>總共</label>
+			<div class="totals-value" id="cart-total">0</div>
+		</div>
+	</div>
+	<input type="submit" value="買單" class="checkout">
+	</form>
+
+</div>
+<a href="#"><img src="../assets/images/top.png" id="top" style="position: fixed;right: 6%;bottom: 4%;width: 4%;transition: .4s;opacity: 0;"></a>
+
+<script type="text/javascript">
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction()
+	{
+		if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30)
+		{
+			document.getElementById("navbar").style.padding = "10px 10px 10px 140px";
+			document.getElementById("navbar").style.opacity="0.8";
+			document.getElementById("top").style.opacity="1";
+		}
+		else
+		{
+			document.getElementById("navbar").style.padding = "30px 10px 30px 140px";
+			document.getElementById("navbar").style.opacity="1";
+			document.getElementById("top").style.opacity="0";
+		}
+	}
+
+	function reset1(){
+		document.getElementById("product1").value = 0;
+		document.getElementById("p1").innerHTML = "0";
+	}
+	function reset2(){
+		document.getElementById("product2").value = 0;
+		document.getElementById("p2").innerHTML = "0";
+	}
+	function reset3(){
+		document.getElementById("product3").value = 0;
+		document.getElementById("p3").innerHTML = "0";
+	}
+	function reset4(){
+		document.getElementById("product4").value = 0;
+		document.getElementById("p4").innerHTML = "0";
+	}
+	function reset5(){
+		document.getElementById("product5").value = 0;
+		document.getElementById("p5").innerHTML = "0";
+	}
+	function reset6(){
+		document.getElementById("product6").value = 0;
+		document.getElementById("p6").innerHTML = "0";
+	}
+	function reset7(){
+		document.getElementById("product7").value = 0;
+		document.getElementById("p7").innerHTML = "0";
+	}
+	function reset8(){
+		document.getElementById("product8").value = 0;
+		document.getElementById("p8").innerHTML = "0";
+	}
+	
+</script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="../assets/JS/sum.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>結帳－食。CHEN</title>
+		<link rel="icon" type="image/x-icon" href="../assets/images/logo.ico">
+		<link rel="stylesheet" href="../assets/CSS/checkbuy.css">
+		<link rel="stylesheet" href="../assets/CSS/menu.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<style type="text/css">
+			body
+			{
+				font-family: 微軟正黑體;
+			}
+			.jumbotron
+			{
+				background-color: #e3d9d0;
+				padding: 30px 10px 30px 140px;
+				transition: 0.4s;
+				z-index: 99;
+				font-size: 20px;
+				font-weight: bold;
+				opacity: 1;
+			}
+			.jumbotron img
+			{
+				width: 2cm;
+				float: left;
+				position: relative;
+				left: -2cm;
+				top: -0.2cm;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container first">
+			<div class="row clearfix" style="margin-right: 0;">
+				<div class="col-md-12 column" style="padding-right: 0;">
+					<div class="jumbotron" id="navbar">
+						<a href="../index.html"><img src="../assets/images/logo.png"></a>
+						<div id="menu">
+							<ul style="vertical-align: middle;margin-top: 0.5cm;">
+								<li style="margin-left: 0%;"><a href="#">商品一覽</a>
+			      					<ul>
+							        	<li><a href="../index.html">熱門商品</a></li>
+							        	<li><a href="./shopcar_0.html">所有口味</a></li>
+							    	</ul>
+							    </li>
+								</li>
+								<li style="margin-left: 7%;"><a href="#">會員專區</a>
+									<ul>
+										<li><a href="./profile.html">個人資料</a></li>
+										<li><a href="./order.html">訂單查詢</a></li>
+									</ul>
+								</li>
+								<li style="margin-left: 7%;"><a href="./contact.html">關於我們</a></li>
+								<li style="margin-left: 7%;"><a href="./shopcar_2.html">購物車</a></li>
+								<li></li>
+								<li class="logsign" style="margin-left: 2.5cm;"><a href="logsign.html">登入 ／ 註冊</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container first">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<img src="../assets/images/line.png" style="position: relative; top: 2.3cm;width: 52%;">
+					<div class="bought">
+						<div style="font-size: 40px;"><input type="text" class="title" value="白巧克力" style="width: 4.5cm; text-align: left;" disabled="true"></div><br>
+						<div style="font-size: 25px; position: relative; top: -.5cm; width: 10cm;">規格：<input type="text" value="單顆馬卡龍" style="width: 4.5cm;" disabled="true"></div>
+						<div style="font-size: 30px; position: relative; top: 0cm; width: 4cm;">$<input type="text" id="price11" value="50" style="width: 3cm;" disabled="true"></div>
+						<div style="font-size: 18px; position: relative;left: 7cm; top: -1cm; width: 3cm;">X<input type="text" id="price1" value="2" style="width: 1.5cm;" disabled="true"></div>
+					</div>
+					<img src="../assets/images/line.png" style="position: relative; top: 1.9cm;width: 52%;">
+					<img src="../assets/images/line.png" style="position: relative; top: 2.3cm;width: 52%;">
+					<div class="bought">
+						<div style="font-size: 40px;"><input type="text" class="title" value="黑巧克力" style="width: 4.5cm;text-align: left;" disabled="true"></div><br>
+						<div style="font-size: 25px; position: relative; top: -.5cm; width: 10cm;">規格：<input type="text" value="單顆馬卡龍" style="width: 4.5cm;" disabled="true"></div>
+						<div style="font-size: 30px; position: relative; top: 0cm; width: 4cm;">$<input type="text" id="price22" value="50" style="width: 3cm;" disabled="true"></div>
+						<div style="font-size: 18px; position: relative;left: 7cm; top: -1cm; width: 3cm;">X<input type="text" id="price2" value="0" style="width: 1.5cm;" disabled="true"></div>
+					</div>
+					<img src="../assets/images/line.png" style="position: relative; top: 1.9cm;width: 52%;">
+					<img src="../assets/images/line.png" style="position: relative; top: 2.3cm;width: 52%;">
+					<div class="bought">
+						<div style="font-size: 40px;"><input type="text" class="title" value="草莓" style="width: 2.3cm;text-align: left;" disabled="true"></div><br>
+						<div style="font-size: 25px; position: relative; top: -.5cm; width: 10cm;">規格：<input type="text" value="單顆馬卡龍" style="width: 4.5cm;" disabled="true"></div>
+						<div style="font-size: 30px; position: relative; top: 0cm; width: 4cm;">$<input type="text" id="price33" value="50" style="width: 3cm;" disabled="true"></div>
+						<div style="font-size: 18px; position: relative;left: 7cm; top: -1cm; width: 3cm;">X<input type="text" id="price3" value="0" style="width: 1.5cm;" disabled="true"></div>
+					</div>
+					<img src="../assets/images/line.png" style="position: relative; top: 1.9cm;width: 52%;">
+					<img src="../assets/images/line.png" style="position: relative; top: 2.3cm;width: 52%;">
+					<div class="bought">
+						<div style="font-size: 40px;"><input type="text" class="title" value="抹茶" style="width: 2.3cm;text-align: left;" disabled="true"></div><br>
+						<div style="font-size: 25px; position: relative; top: -.5cm; width: 10cm;">規格：<input type="text" value="單顆馬卡龍" style="width: 4.5cm;" disabled="true"></div>
+						<div style="font-size: 30px; position: relative; top: 0cm; width: 4cm;">$<input type="text" id="price44" value="50" style="width: 3cm;" disabled="true"></div>
+						<div style="font-size: 18px; position: relative;left: 7cm; top: -1cm; width: 3cm;">X<input type="text" id="price4" value="0" style="width: 1.5cm;" disabled="true"></div>
+					</div>
+					<img src="../assets/images/line.png" style="position: relative; top: 1.9cm;width: 52%;">
+					<img src="../assets/images/line.png" style="position: relative; top: 2.3cm;width: 52%;">
+					<div class="bought">
+						<div style="font-size: 40px;"><input type="text" class="title" value="珍珠奶茶" style="width: 4.5cm;text-align: left;" disabled="true"></div><br>
+						<div style="font-size: 25px; position: relative; top: -.5cm; width: 10cm;">規格：<input type="text" value="單顆馬卡龍" style="width: 4.5cm;" disabled="true"></div>
+						<div style="font-size: 30px; position: relative; top: 0cm; width: 4cm;">$<input type="text" id="price55" value="50" style="width: 3cm;" disabled="true"></div>
+						<div style="font-size: 18px; position: relative;left: 7cm; top: -1cm; width: 3cm;">X<input type="text" id="price5" value="0" style="width: 1.5cm;" disabled="true"></div>
+					</div>
+					<img src="../assets/images/line.png" style="position: relative; top: 1.9cm;width: 52%;">
+					<img src="../assets/images/line.png" style="position: relative; top: 2.3cm;width: 52%;">
+					<div class="bought">
+						<div style="font-size: 40px;"><input type="text" class="title" value="春節限定" style="width: 4.5cm;text-align: left;" disabled="true"></div><br>
+						<div style="font-size: 25px; position: relative; top: -.5cm; width: 10cm;">規格：<input type="text" value="單顆馬卡龍" style="width: 4.5cm;" disabled="true"></div>
+						<div style="font-size: 30px; position: relative; top: 0cm; width: 4cm;">$<input type="text" id="price66" value="80" style="width: 3cm;" disabled="true"></div>
+						<div style="font-size: 18px; position: relative;left: 7cm; top: -1cm; width: 3cm;">X<input type="text" id="price6" value="0" style="width: 1.5cm;" disabled="true"></div>
+					</div>
+					<img src="../assets/images/line.png" style="position: relative; top: 1.9cm;width: 52%;">
+					<img src="../assets/images/line.png" style="position: relative; top: 2.3cm;width: 52%;">
+					<div class="bought">
+						<div style="font-size: 40px;"><input type="text" class="title" value="客製化" style="width: 3.2cm;text-align: left;" disabled="true"></div><br>
+						<div style="font-size: 25px; position: relative; top: -.5cm; width: 10cm;">規格：<input type="text" value="單顆馬卡龍" style="width: 4.5cm;" disabled="true"></div>
+						<div style="font-size: 30px; position: relative; top: 0cm; width: 4cm;">$<input type="text" id="price77" value="90" style="width: 3cm;" disabled="true"></div>
+						<div style="font-size: 18px; position: relative;left: 7cm; top: -1cm; width: 3cm;">X<input type="text" id="price7" value="0" style="width: 1.5cm;" disabled="true"></div>
+					</div>
+					<img src="../assets/images/line.png" style="position: relative; top: 1.9cm;width: 52%;">
+					<img src="../assets/images/line.png" style="position: relative; top: 2.3cm;width: 52%;">
+					<div class="bought">
+						<div style="font-size: 40px;"><input type="text" class="title" value="精緻禮盒(6入)" style="width: 6.7cm;text-align: left;" disabled="true"></div><br>
+						<div style="font-size: 25px; position: relative; top: -.5cm; width: 10cm;">規格：<input type="text" value="單顆馬卡龍" style="width: 4.5cm;" disabled="true"></div>
+						<div style="font-size: 30px; position: relative; top: 0cm; width: 4cm;">$<input type="text" id="price88" value="290" style="width: 3cm;" disabled="true"></div>
+						<div style="font-size: 18px; position: relative;left: 7cm; top: -1cm; width: 3cm;">X<input type="text" id="price8" value="0" style="width: 1.5cm;" disabled="true"></div>
+					</div>
+					<img src="../assets/images/line.png" style="position: relative; top: 1.9cm;width: 52%;">
+					<div style="position: relative;top:2cm;">&nbsp;</div>
+					<div style="position: absolute;top: 3cm; left: 19cm;font-size: 30px;font-weight: bold;">
+						寄送方式&nbsp;&nbsp;&nbsp;
+						<select style="width: 5cm;">
+							<option>711店配</option>
+							<option>全家店配</option>
+							<option>宅配</option>
+						</select>
+					</div>
+					<div style="position: absolute;top: 5.5cm; left: 19cm;font-size: 30px;font-weight: bold;">
+						付款方式&nbsp;&nbsp;&nbsp;
+						<select style="width: 5cm;">
+							<option>貨到付款</option>
+							<option>銀行轉帳</option>
+						</select>
+					</div>
+					<div style="position: absolute;top: 8cm; left: 19.2cm;font-size: 30px;font-weight: bold;">
+						<input type="checkbox" id="coupon" onclick="coupon()" style="zoom: 1.8;">&nbsp;&nbsp;&nbsp;使用優惠券
+					</div>
+					<div class="bought" style="font-size: 35px; position: absolute; top: 10.2cm; left: 21cm; width: 10cm; font-weight: bolder;margin-bottom: 0.5cm; color: #AE0000;">訂單金額：$<input type="text" id="total" style="width: 3cm; color: #AE0000;" disabled="true"></div>
+					<a href="./finish.html"><input type="button" value="結帳" class="checkout"></a>
+				</div>
+			</div>
+		</div>
+		<a href="#"><img src="../assets/images/top.png" id="top" style="position: fixed;right: 6%;bottom: 4%;width: 4%;transition: .4s;opacity: 0;"></a>
+
+		<script type="text/javascript">
+			var p1=document.getElementById('price1').value*document.getElementById('price11').value;
+			var p2=document.getElementById('price2').value*document.getElementById('price22').value;
+			var p3=document.getElementById('price3').value*document.getElementById('price33').value;
+			var p4=document.getElementById('price4').value*document.getElementById('price44').value;
+			var p5=document.getElementById('price5').value*document.getElementById('price55').value;
+			var p6=document.getElementById('price6').value*document.getElementById('price66').value;
+			var p7=document.getElementById('price7').value*document.getElementById('price77').value;
+			var p8=document.getElementById('price8').value*document.getElementById('price88').value;
+
+			var total=p1+p2+p3+p4+p5+p6+p7+p8;
+			document.getElementById('total').value=total;
+
+			function coupon()
+			{
+				var ch=document.getElementById('coupon').checked;
+				var chhh=document.getElementById('total').value*.95;
+				if(ch==true)
+				{
+					if(chhh%1==0)
+						document.getElementById('total').value*=.95;
+					else
+						document.getElementById('total').value=chhh+.5;
+				}
+				else
+				{
+					var chhh2=document.getElementById('total').value
+					if((chhh2/.95)%1==0)
+					{
+						document.getElementById('total').value/=.95;
+					}
+					else
+						document.getElementById('total').value=(chhh2-.5)/.95;
+				}
+			}
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction()
+			{
+			  if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30)
+			  {
+			  	document.getElementById("navbar").style.padding = "10px 10px 10px 140px";
+			  	document.getElementById("navbar").style.opacity="0.8";
+			  	document.getElementById("top").style.opacity="1";
+			  }
+			  else
+			  {
+			    document.getElementById("navbar").style.padding = "30px 10px 30px 140px";
+			    document.getElementById("navbar").style.opacity="1";
+			    document.getElementById("top").style.opacity="0";
+			  }
+			}
+		</script>
+	</body>
+</html>

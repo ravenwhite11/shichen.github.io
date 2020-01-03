@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>結帳－食。CHEN</title>
+		<link rel="icon" type="image/x-icon" href="../assets/images/logo.ico">
+		<link rel="stylesheet" href="../assets/CSS/finish.css">
+		<link rel="stylesheet" href="../assets/CSS/menu.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<style type="text/css">
+			body
+			{
+				font-family: 微軟正黑體;
+			}
+			.jumbotron
+			{
+				background-color: #e3d9d0;
+				padding: 30px 10px 30px 140px;
+				transition: 0.4s;
+				z-index: 99;
+				font-size: 20px;
+				font-weight: bold;
+				opacity: 1;
+			}
+			.jumbotron img
+			{
+				width: 2cm;
+				float: left;
+				position: relative;
+				left: -2cm;
+				top: -0.2cm;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container first">
+			<div class="row clearfix" style="margin-right: 0;">
+				<div class="col-md-12 column" style="padding-right: 0;">
+					<div class="jumbotron" id="navbar">
+						<a href="../index.html"><img src="../assets/images/logo.png"></a>
+						<div id="menu">
+							<ul style="vertical-align: middle;margin-top: 0.5cm;">
+								<li style="margin-left: 0%;"><a href="#">商品一覽</a>
+			      					<ul>
+							        	<li><a href="../index.html#hot">熱門商品</a></li>
+							        	<li><a href="./shopcar_0.html">所有口味</a></li>
+							    	</ul>
+							    </li>
+								</li>
+								<li style="margin-left: 7%;"><a href="#">會員專區</a>
+									<ul>
+										<li><a href="./profile.html">個人資料</a></li>
+										<li><a href="./order.html">訂單查詢</a></li>
+									</ul>
+								</li>
+								<li style="margin-left: 7%;"><a href="./contact.html">關於我們</a></li>
+								<li style="margin-left: 7%;"><a href="./shopcar_2.html">購物車</a></li>
+								<li></li>
+								
+			<li class="logsign" style="margin-left: 2.5cm;"><a href="logout1.html">登出</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="loading-window">
+			<div class="car">
+		        <div class="strike"></div>
+		        <div class="strike strike2"></div>
+		        <div class="strike strike3"></div>
+		        <div class="strike strike4"></div>
+		        <div class="strike strike5"></div>
+		        <div class="car-detail spoiler"></div>
+		        <div class="car-detail back"></div>
+		        <div class="car-detail center"></div>
+		        <div class="car-detail center1"></div>
+		        <div class="car-detail front"></div>
+		        <div class="car-detail wheel"></div>
+		        <div class="car-detail wheel wheel2"></div>
+		    </div>
+		    <div class="text">
+		        <span>訂單完成，快速出貨中</span>
+		    </div>
+		</div>
+
+		<a href="#"><img src="../assets/images/top.png" id="top" style="position: fixed;right: 6%;bottom: 4%;width: 4%;transition: .4s;opacity: 0;"></a>
+
+		<script type="text/javascript">
+			
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction()
+			{
+			  if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30)
+			  {
+			  	document.getElementById("navbar").style.padding = "10px 10px 10px 140px";
+			  	document.getElementById("navbar").style.opacity="0.8";
+			  	document.getElementById("top").style.opacity="1";
+			  }
+			  else
+			  {
+			    document.getElementById("navbar").style.padding = "30px 10px 30px 140px";
+			    document.getElementById("navbar").style.opacity="1";
+			    document.getElementById("top").style.opacity="0";
+			  }
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+body
+{
+	background-image: url(../images/bg.jpeg);
+}
+.bought
+{
+	position: relative;
+	top: 2.5cm;
+	left: 4cm;
+}
+.bought input
+{
+	border: 0;
+	background: none;
+	text-align: center;
+}
+.title
+{
+	color: black;
+}
+.checkout {
+  border: 0;
+  margin-top: 20px;
+  padding: 6px 25px;
+  background-color: #6b6;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 3px;
+  position: absolute;
+  top: 11.6cm;
+  left: 26cm;
+}
+
+.checkout:hover {
+  background-color: #494;
+}

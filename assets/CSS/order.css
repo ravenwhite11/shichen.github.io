@@ -1,0 +1,32 @@
+body
+{
+	background-image: url(../images/bg.jpeg);
+}
+.bar
+{
+	width: 80%;
+	display: block;
+	margin: auto;
+	position: relative;
+	top: 1cm;
+}
+.truck
+{
+	width: 7%;
+	position: relative;
+	top: .5cm;
+	left: 16.4cm;
+	opacity: .6;
+}
+.bought
+{
+	position: relative;
+	top: 1.25cm;
+	left: 6cm;
+}
+input
+{
+	border: 0;
+	background: none;
+	text-align: center;
+}

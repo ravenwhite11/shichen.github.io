@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>訂單查詢－食。CHEN</title>
+		<link rel="icon" type="image/x-icon" href="../assets/images/logo.ico">
+		<link rel="stylesheet" href="../assets/CSS/order.css">
+		<link rel="stylesheet" href="../assets/CSS/menu.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<style type="text/css">
+			body
+			{
+				font-family: 微軟正黑體;
+			}
+			.progress
+			{
+				background: none;
+				height: 1cm;
+				font-size: 18px;
+				position: relative;
+				top: 1.5cm;
+				text-align: center;
+			}
+			.progress li
+			{
+				display: inline;
+			}
+			.jumbotron
+			{
+				background-color: #e3d9d0;
+				padding: 30px 10px 30px 140px;
+				transition: 0.4s;
+				z-index: 99;
+				font-size: 20px;
+				font-weight: bold;
+				opacity: 1;
+			}
+			.jumbotron img
+			{
+				width: 2cm;
+				float: left;
+				position: relative;
+				left: -2cm;
+				top: -0.2cm;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container first">
+			<div class="row clearfix" style="margin-right: 0;">
+				<div class="col-md-12 column" style="padding-right: 0;">
+					<div class="jumbotron" id="navbar">
+						<a href="../index.html"><img src="../assets/images/logo.png"></a>
+						<div id="menu">
+							<ul style="vertical-align: middle;margin-top: 0.5cm;">
+								<li style="margin-left: 0%;"><a href="#">商品一覽</a>
+			      					<ul>
+							        	<li><a href="../index.html">熱門商品</a></li>
+							        	<li><a href="./shopcar_0.html">所有口味</a></li>
+							    	</ul>
+							    </li>
+								</li>
+								<li style="margin-left: 7%;"><a href="#">會員專區</a>
+									<ul>
+										<li><a href="./profile.html">個人資料</a></li>
+										<li><a href="./order.html">訂單查詢</a></li>
+									</ul>
+								</li>
+								<li style="margin-left: 7%;"><a href="./contact.html">關於我們</a></li>
+								<li style="margin-left: 7%;"><a href="./shopcar_2.html">購物車</a></li>
+								<li></li>
+								<li class="logsign" style="margin-left: 2.5cm;"><a href="logsign.html">登入 ／ 註冊</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container first">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<img class="truck" src="../assets/images/truck.png">
+					<img class="bar" src="../assets/images/bar.png">
+					<div class="progress">
+						<ul>
+							<li style="margin-left: 3.4cm;">訂單已建立</li>
+							<li style="margin-left: 3.75cm;">備貨中</li>
+							<li style="margin-left: 4.2cm; font-weight: bolder; color: #930000; font-size: 24px;">運送中</li>
+							<li style="margin-left: 3.65cm;">包裹已配達</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container first">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<img src="../assets/images/line.png" style="position: relative; top: 2.3cm;width: 100%;">
+					<div style="margin-left: 4cm; width: 10.8cm; border-right: solid 2px lightgray;height: 4cm;">
+						<div style="font-size: 35px;margin-top: 3cm;">訂購者：	<input type="text" class="title" value="Amy" style="width: 4.5cm; text-align: center;" disabled="true"></div>
+						<div style="font-size: 35px;margin-top: 1cm;">收件者：	<input type="text" class="title" value="Rock" style="width: 4.5cm; text-align: center;" disabled="true"></div>
+						<div style="font-size: 35px;position: relative;top: -3.85cm;left: 13cm;">寄送方式：	<input type="text" class="title" value="7-11店配" style="width: 4.5cm; text-align: center;" disabled="true"></div>
+						<div style="font-size: 35px;position: relative;top: -2.85cm;left: 13cm;">付款方式：	<input type="text" class="title" value="貨到付款" style="width: 4.5cm; text-align: center;" disabled="true"></div>
+					</div>
+					<img src="../assets/images/line.png" style="position: relative; top: 0.6cm;width: 100%;">
+					<div class="bought">
+						<div style="font-size: 40px;width: 4.5cm;"><input type="text" value="白巧克力" style=" text-align: left;" disabled="true"></div>
+						<div style="font-size: 25px; position: relative;left: 3cm;top: -1.3cm;left: 9cm; width: 9cm;">規格：<input type="text" value="單顆馬卡龍" style="width: 4.5cm;" disabled="true">	X<input type="text" id="price1" value="2" style="width: 1.5cm;" disabled="true"></div>
+					</div>
+					<img src="../assets/images/line.png" style="position: relative; top: 0.7cm;width: 100%;">
+					<div class="bought" style="font-size: 35px; position: relative; top: 1.5cm; left: 21cm; width: 10cm; font-weight: bolder;margin-bottom: 0.5cm; color: #AE0000;">訂單金額：$<input type="text" id="total" value="100" style="width: 3cm; color: #AE0000;" disabled="true"></div>
+				</div>
+			</div>
+		</div>
+		<a href="#"><img src="../assets/images/top.png" id="top" style="position: fixed;right: 6%;bottom: 4%;width: 4%;transition: .4s;opacity: 0;"></a>
+
+		<script type="text/javascript">
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction()
+			{
+			  if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30)
+			  {
+			  	document.getElementById("navbar").style.padding = "10px 10px 10px 140px";
+			  	document.getElementById("navbar").style.opacity="0.8";
+			  	document.getElementById("top").style.opacity="1";
+			  }
+			  else
+			  {
+			    document.getElementById("navbar").style.padding = "30px 10px 30px 140px";
+			    document.getElementById("navbar").style.opacity="1";
+			    document.getElementById("top").style.opacity="0";
+			  }
+			}
+		</script>
+	</body>
+</html>
